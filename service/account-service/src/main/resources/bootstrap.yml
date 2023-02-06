@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+seata:
+  config:
+    type: nacos
+    nacos:
+      server-addr: 127.0.0.1:8848
+  registry:
+    type: nacos
+    nacos:
+      server-addr: 127.0.0.1:8848
+      application: seata-server
+      group: SEATA_GROUP
+      username: nacos
+      password: nacos
+      namespace: public
+  tx-service-group: default_tx_group01

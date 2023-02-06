@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: account-service
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3307/seata_demo?useUnicode=true&characterEncoding=UTF-8
+server:
+  port: 8081

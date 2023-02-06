@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: order-service
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3307/seata_demo?useUnicode=true&characterEncoding=UTF-8
+  cloud:
+    openfeign:
+      lazy-attributes-resolution: true #bug fix (https://github.com/alibaba/spring-cloud-alibaba/issues/3024)
+
+server:
+  port: 8083
+feign:
+  sentinel:
+    enabled: true
