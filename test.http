@@ -1,0 +1,22 @@
+###
+POST http://localhost:8083/order/create-order
+Content-Type: application/json
+Accept: application/json
+
+{
+  "orderItems": [
+    {
+      "goodsId": 1,
+      "count": 2
+    },
+    {
+      "goodsId": 2,
+      "count": 5
+    },
+    {
+      "goodsId": 3,
+      "count": 1
+    }
+  ]
+}
+###

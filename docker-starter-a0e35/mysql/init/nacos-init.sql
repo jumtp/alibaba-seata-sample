@@ -223,7 +223,7 @@ INSERT INTO users (username, password, enabled) VALUES ('nacos', '$2a$10$EuWPZHz
 
 INSERT INTO roles (username, role) VALUES ('nacos', 'ROLE_ADMIN');
 
-#config init
+#seata config init
 INSERT INTO nacos.his_config_info (id, nid, data_id, group_id, app_name, content, md5, gmt_create, gmt_modified, src_user, src_ip, op_type, tenant_id, encrypted_data_key) VALUES (0, 1, 'seataServer.properties', 'SEATA_GROUP', '', 'store.mode=db
 #-----db-----
 store.db.datasource=druid
